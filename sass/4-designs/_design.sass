@@ -1,0 +1,472 @@
+//header Section Design
+header
+  border-bottom: 1.8px dashed $border
+  padding: $base-size 0
+.header-scroll
+  position: fixed
+  width: 100%
+  display: block
+  z-index: 999999
+  background: white
+  box-shadow: 1px 1px 6px 0 rgba(0,0,0,.09)
+
+.top-search
+  background: transparent
+  border: none
+  display: inline-block
+  i
+    color: $blue-color
+    font-size: $three-size
+.header-left-menu
+  img
+    cursor: pointer
+    max-width: 56%
+.humberg-close
+  display: none
+.header-logo
+  margin-left: auto
+  text-align: center
+  margin-right: $md-size + .6rem
+.custom-logo
+  img
+    width: 10%
+.top-search-bar
+  margin-left: auto
+  cursor: pointer
+.custom-logo
+  text-align: center
+  img
+    width: 25%
+
+//Toggle Nav
+.toggle-Nav
+  display: none
+  position: fixed
+  background: white
+  z-index: 9999
+  width: 100%
+  padding: $md-size
+  margin-top: $md-size + .6rem
+  top: 100px
+  bottom: 0
+
+//Navbar Search
+.navabr-search
+  form
+    text-align: center
+    margin: auto
+    max-width: 550px
+    width: 100%
+    position: relative
+    input
+      height: $four-size
+      display: block
+      width: 100%
+      border: none
+      padding: 0 $md-size
+      border: 1px solid $border
+      font-size: $base-size + .2rem
+    button
+      background: $blue-color
+      bordeR: none
+      padding: 0 $md-size
+      font-size: $base-size + .2rem
+      cursor: pointer
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+
+//Topbar Fixed Nav
+.top-bar-fixed-nav
+  max-width: 950px
+  margin: $md-size auto
+  .navbar-nav
+  ul
+    display: inline-block
+    width: 100%
+    li
+      margin: auto
+      display: inline-block
+      font-size: $base-size
+      text-transform: uppercase
+      position: relative
+      letter-spacing: 1px
+      width: 19%
+      padding-top: $five-size
+      &::before
+        font-family: "Font Awesome 5 Free"
+        content: "\f0eb"
+        font-size: $md-size
+        color: $blue-color
+        top: 7px
+        cursor: pointer
+        padding: 0 $base-size
+        position: absolute
+        top: 0
+        z-index: 999
+        font-size: $three-size
+        left: 30%
+      a
+        color: $black
+        padding: .3rem $base-size
+        clip-path: polygon(10% 1%, 90% 0, 100% 46%, 100% 46%, 90% 100%, 10% 100%, 0 45%, 0 45%)
+      &:nth-child(2n+1)
+        a
+          background: #DBCFE3
+      &:nth-child(2n+2)
+        a
+          background: #D4DCB5
+      &:first-child
+        a
+          background: $blue-color
+      &:nth-child(7)
+        a
+          background: $blue-color
+      &:last-child
+        margin-right: 0
+        a
+          margin-right: 0
+  .menu-item-has-children
+    margin-bottom: $normal-size + .2rem
+  ul.sub-menu
+    display: block
+    position: absolute
+    width: 100%
+    min-width: 160px
+    margin-top: .5rem
+    background: $fade-blue
+    padding: $normal-size $base-size
+    padding-left: .3rem
+
+    li
+      padding: initial
+      display: block
+      list-style-type: none
+      width: 100%
+      margin: 0
+      font-size: $base-size
+      text-transform: uppercase
+      max-width: 100%
+      font-size: $base-size + .2rem
+      letter-spacing: initial
+      &::before
+        content: ''
+        display: none
+      a
+        clip-path: none
+        background: none
+        &:hover
+          text-decoration: underline
+          text-decoration-color: $orng
+
+//Banner Section
+.hero-banner
+  padding: $md-size 0
+  background: $fade-blue
+  margin-top: $five-size
+  position: relative
+.banner-bottom
+  padding: $md-size 0
+  ul
+    display: inline-block
+    li
+      display: inline-block
+      background: $blue-color
+      margin-right: $normal-size
+      margin-bottom: $normal-size
+      a
+        padding: .4rem $md-size
+        color: $black
+        display: block
+        font-size: $base-size + .2rem
+        text-transform: capitalize
+      &:hover
+        background: $hover
+.banner-header-p
+  text-align: center
+  font-size: $md-size
+  text-transform: capitalize
+  margin-bottom: $normal-size
+.main-banner-section
+  margin-top: - $four-size
+//Front Page Single Blog
+.front-page-blogs-cat
+  margin-top: $md-size
+.custom-post-col
+  &:nth-child(n+4)
+    margin-top: $md-size
+
+.single-front-blog
+  box-shadow: 1px 1px 6px 0 rgba(0,0,0,.09)
+  display: block
+  cursor: pointer
+  transition: .3s
+  &:hover
+    transform: translateY(-2px)
+    transition: .3s
+  .size-post-thumbnail
+    height: 270px
+    max-height: 100%
+    width: 405px
+    width: 100%
+    object-fit: cover
+//Featured Video Section Design for front Page
+.index-video-features
+  .type-videos
+    &::after
+      content: ""
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 0
+      top: 0
+      background: rgba(0, 0, 0, 0.4)
+.type-videos
+  position: relative
+
+  img.size-post-thumbnail
+    height: 390px
+    max-height: 390px
+.custom-video
+  width: 100%
+  object-fit: cover
+  display: block
+  position: relative
+//Play Button Design
+.video-post-single
+  &:hover
+    transform: translateY(0)
+#play_btn
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  z-index: 999
+  width: 100px
+  height: 100px
+  text-align: center
+  line-height: 110px
+  border-radius: 50%
+  background: $blue-color
+  &:hover
+    .play-icon
+      background: $black
+.play_btn-js
+.type-videos-js
+  &::after
+    content: ''
+    display: none !important
+.play-icon
+  clip-path: polygon(0 0, 0% 100%, 100% 50%)
+  background: $fade-blue
+  width: 50px
+  height: 50px
+  line-height: 50px
+  margin: auto
+  text-align: center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-35%,-50%)
+
+.common-loop
+  .custom-post-col-4
+    padding-left: 0
+    .single-front-blog
+      position: relative
+    .front-single-post-dts
+      position: initial
+      // .front-cat
+      //   top: .4rem
+.front-single-post-dts
+  position: relative
+  padding: $md-size 0
+  background: white
+  .post-title
+    color: $black
+    width: 90%
+    margin: auto
+    &:hover
+      a
+        text-decoration: underline
+        text-decoration-color: $orng
+    a
+      vertical-align: middle
+      height: $five-size + $three-size
+      color: $black
+      display: table-cell
+      text-align: center
+      margin: auto
+  .front-cat
+    position: absolute
+    top: 1.1px
+    left: 50%
+    transform: translate(-50%,-50%)
+    clip-path: polygon(10% 1%, 90% 0, 100% 46%, 100% 46%, 90% 100%, 10% 100%, 0 45%, 0 45%)
+    background: linear-gradient(45deg,transparent 1em,#D9EBF3 calc(1em + 1px)),linear-gradient(135deg,transparent 1em,#D9EBF3 calc(1em + 1px)),linear-gradient(225deg,transparent 1em,#D9EBF3 calc(1em + 1px)),linear-gradient(315deg,transparent 1em,#D9EBF3 calc(1em + 1px))
+    padding: .2rem $md-size
+    text-transform: uppercase
+    display: flex
+    max-width: 90%
+    margin: auto
+    a
+      color: $black
+
+//Front Page Bulk Post
+.front-page-bluk-page
+  .custom-post-col-4
+    &:nth-child(3)
+      margin-top: 0
+    &:nth-child(4)
+      margin-top: 0
+.custom-post-col-4
+  &:nth-child(n+3)
+    margin-top: $md-size
+
+.featured-cat-posts
+  margin-bottom: $md-size
+.featured-index-cat-title
+  text-align: center
+  font-size: $three-size
+  text-transform: capitalize
+  padding: $base-size 0
+  line-height: 1.5
+  display: table
+  cursor: pointer
+  margin: auto
+  &:hover
+    text-decoration: underline
+    text-decoration-color: $orng
+//Divider Subscriber Section
+.divider-subscribe
+  background: $fade-blue
+  margin: $three-size 0
+  padding: $three-size $md-size
+  form
+    position: relative
+  label
+    display: block
+    position: relative
+    &::before
+      font-family: "Font Awesome 5 Free"
+      font-weight: 900
+      content: "\f0e0"
+      position: absolute
+      font-size: $md-size
+      color: $blue-color
+      top: 7px
+      cursor: pointer
+      padding: 0 $base-size
+    input[type='email']
+      display: block
+      width: 100%
+      border: 1px solid $border
+      padding: .4rem $base-size
+      padding-left: $five-size
+      line-height: $three-size + .3rem
+      font-size: $base-size + .2rem
+
+  input[type='submit']
+    background: $blue-color
+    border: none
+    position: absolute
+    right: 1px
+    top: 1px
+    bottom: 1px
+    font-size: $base-size + .2rem
+    text-transform: capitalize
+    padding: .4rem $base-size
+    cursor: pointer
+.fron-page-widget
+  margin-left: auto
+  margin-top: 6px
+.front-subs-title
+  font-size: $three-size
+  text-transform: capitalize
+
+.bulk-post-four
+  background: $fade-blue
+  padding: $md-size 0
+  margin-top: $five-size + $md-size
+.front-page-bluk-page
+  margin-top: - ($five-size )
+//Footer Section Design
+.footer
+  .sub-menu
+    display: none
+  .custom-logo
+    text-align: left
+    img
+      width: 10%
+  .divider-subscribe
+    background: transparent
+    margin: 0
+    padding: 0
+.widget_email-subscribers-form
+  text-transform: capitalize
+  h3
+    padding-bottom: $normal-size
+.website-socials
+  display: flex
+  align-items: center
+  margin-top: $md-size
+  p
+    font-size: $base-size  + .3rem
+    display: inline-block
+  ul
+    margin-left: $base-size
+    display: inline-block
+    li
+      display: inline-block
+      list-style-type: none
+//Footer Menu
+.footer-menu
+  margin-top: $base-size
+  ul
+    display: inline-block
+    li
+      display: inline-block
+      list-style-type: none
+      margin-right: $normal-size - .3rem
+      margin-bottom: $normal-size
+      font-size: $base-size + .2rem
+      background: $blue-color
+      &:nth-child(2n+1)
+        background: #DBCFE3
+      &:nth-child(2n+2)
+        background: #D4DCB5
+      &:first-child
+        background: $blue-color
+      &:nth-child(7)
+        background: $blue-color
+      &:last-child
+        margin-right: 0
+      a
+        display: block
+        padding: .2rem $md-size
+        color: $black
+
+//Right Footer Menu
+.right-footer-menu
+  .widget_nav_menu
+    margin-top: $md-size
+    ul
+      margin: 0
+      column-count: 2
+      li
+        text-transform: capitalize
+        list-style-type: none
+        a
+          color: $fade-black
+          font-size: $base-size + .2rem
+          &:hover
+            color: $blue-color
+.footer-bottom
+  background: $fade-blue
+  padding: $base-size 0
+.main-footer-section
+  padding: $four-size 0
+.copyright
+  text-align: center

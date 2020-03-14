@@ -1,0 +1,35 @@
+//Sidebar Design
+.sidebar
+
+.recent_posts_heading
+  font-size: $three-size
+  margin-bottom: $normal-size
+.widget_recent_entries
+
+  ul
+    li
+      list-style-type: none
+      margin-bottom: $base-size
+      &:last-child
+        margin-bottom: 0
+      a
+        color: $black
+      h3
+        font-size: $base-size + .2rem
+//Pagination
+.pagination
+  margin: $three-size auto
+  font-size: $base-size + .3rem
+  font-weight: 500
+  a
+    color: $black
+  .page-numbers
+    margin-right: $normal-size
+    border: 1px solid $blue-color
+    padding: .4rem $base-size - .2rem
+    display: block
+    &:last-child
+      margin-right: 0
+  .current
+    background: $blue-color
+    color: white

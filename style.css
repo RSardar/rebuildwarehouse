@@ -1,0 +1,13 @@
+/*
+	Theme Name: Rebuild Ware House
+	Theme URI: http://www.rebuildwarehouse.org/
+	Description: A custom wordpress theme for rebuildwarehouse.org
+	Version: 1.4.3
+	Author: Rakesh Sardar (@rakeshsardar81)
+	Author URI: http://rakeshsardar.com
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+@import "css/style.css";

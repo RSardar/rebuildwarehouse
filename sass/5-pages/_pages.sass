@@ -1,0 +1,192 @@
+//Page
+.pages
+  margin-top: $md-size
+//Single Page Design
+.single-post-details
+.single-page-title
+  font-size: $four-size + .4rem
+  letter-spacing: .5px
+  margin: $md-size 0
+  text-align: center
+  display: block
+  color: $black
+.title-common
+  text-transform: capitalize
+  color: $blue-color
+.social-share-post
+  margin-bottom: $base-size
+  ul
+    display: inline-block
+    li
+      margin-right: $normal-size
+      display: inline-block
+      &:last-child
+        margin-right: 0
+      i
+        font-size: $md-size
+        color: white
+        height: 35px
+        width: 35px
+        line-height: 35px
+        text-align: center
+        box-shadow: 2px 2px 2px $black
+      .fa-facebook-f
+        background: $fb
+      .fa-twitter
+        background: $twtr
+.single-thumbnail
+  text-align: center
+.single-post-details
+  text-align: center
+  margin-bottom: $base-size
+  font-size: $base-size + .2rem
+  color: $fade-black
+.single-author
+  text-transform: capitalize
+  border-right: 1px solid $fade-blue
+  padding-right: $normal-size
+  a
+    color: $black
+    font-weight: 600
+    border-bottom: 2px dashed $deep-blue
+    &:hover
+      color: $deep-blue
+.time-to-read
+  font-size: $base-size + .2rem
+  padding: $normal-size 0
+.single-thumbnail
+  margin: $md-size 0
+.post-cat
+  text-align: center
+  a
+    color: $black
+    padding: .7rem $three-size
+    background: $hover
+    margin-right: $normal-size
+    font-size: $base-size + .2rem
+    box-shadow: 2px 2px 0px 0px #33333378
+    &:last-child
+      margin-right: 0
+//Main Content
+.main-content
+  color: $black
+  h2
+    font-size: 2 * $base-size + .2rem
+    margin: $md-size + .2rem 0 $base-size
+  h3
+    font-size: $md-size + .4rem
+    margin: $md-size - .2rem 0 $normal-size
+  h4
+    font-size: $md-size + .1rem
+    margin: $base-size + .2rem 0 $normal-size
+  h5
+    font-size: $md-size
+    margin: $base-size 0 $normal-size
+  h6
+    font-size: $md-size - .1rem
+    margin: $normal-size 0 $normal-size - .2rem
+  a
+    color: $deep-blue
+    &:hover
+      border-bottom: 2px solid
+  p
+    margin: $normal-size 0
+  p,span,ul,li,ol,
+    font-size: $base-size + .3rem
+  ul
+    margin: $base-size $base-size $base-size $md-size
+  li
+    margin: .5rem 0
+  // .wp-block-image
+  //   text-align: center
+  figcaption
+    font-style: italic
+    margin: 0
+.main-tags
+  font-size: $base-size
+  margin: $four-size 0
+  font-size: $base-size + .3rem
+  text-transform: capitalize
+  @extend .post-cat
+  text-align: left
+.single-author-bio
+  margin: $md-size 0
+  border: 1px solid $border
+  padding: $md-size
+  img.avatar
+    border-radius: 50%
+.author-bio-box
+  @extend .single-author
+  a
+    border: none
+.author-bio-box
+  font-size: $md-size
+.author-social-pages
+  margin-top: $normal-size
+.social_details
+  display: inline-block
+
+.single-content
+  max-width: 1000px
+  margin: auto
+
+//Author Page Details
+.author-page-details
+  max-width: 800px
+  margin: $three-size auto
+  border: 1px solid $border
+  padding: $three-size
+  padding-top: 0
+  .avatar
+    border-radius: 50%
+//Common Posts Center
+.common-center-posts
+  max-width: 1100px
+  margin: auto
+//Recent Commont Page
+.recent-common
+  background: $fade-blue
+  padding: $three-size 0
+  .custom-post-col-4
+    &:nth-child(3)
+      margin-top: 0
+    &:nth-child(4)
+      margin-top: 0
+.custom-recent
+  margin-top: - $five-size
+.recent-post-title
+  // text-transform: capitalize
+  // font-size: $three-size
+  // text-align: center
+  // margin-bottom: $md-size
+  // padding-bottom: $md-size
+  // font-weight: 500
+  @extend .featured-index-cat-title
+  padding-bottom: $three-size
+
+
+//Contact Form Design
+.wpcf7
+  max-width: 650px
+  padding: $three-size
+  margin: auto
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.09)
+  label
+    display: block
+  input,textarea
+    width: 100%
+    display: block
+    border: 1px solid $border
+    resize: none
+  input
+    padding: .2rem $normal-size
+  textarea
+    padding: .5rem $normal-size
+  input[type="submit"]
+    background: $blue-color
+    width: auto
+    color: $black
+    border: none
+    box-shadow: none
+    cursor: pointer
+    padding: .5rem $three-size
